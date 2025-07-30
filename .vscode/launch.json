@@ -8,8 +8,10 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
+      "runtimeExecutable": "npm",
+      "console": "integratedTerminal",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${file}"
+      "runtimeArgs": ["run", "start:debug"]
     }
   ]
 }
